@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#lefond{
+    background-color: #EBEBEB;
+}
+#box{
+    border: 1px solid;
+}
+#box:hover{
+    border: 3px solid;
+    border-color: #60a5fa;
+}
+#box-in{
+    border: 2px solid;
+}
+
+
+#ball{
+
+    background-color: #FFFFFF;
+    border: 1px solid;
+}
+#ball:hover{
+    border: 3px solid;
+    border-color: #60a5fa;
+}
+#space-box{
+    margin-top: 70px;
+    margin-left: 68px;
+}
+
+#test{
+    background-color: #737778;
+}
