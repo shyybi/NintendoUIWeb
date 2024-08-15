@@ -33,4 +33,10 @@
 
 #test{
     background-color: #737778;
+
+}
+#button{
+    filter: invert();
+    filter: grayscale();
+    opacity: 60%;
 }

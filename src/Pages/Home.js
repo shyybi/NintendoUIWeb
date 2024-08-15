@@ -14,94 +14,95 @@ import mouse from '../assets/click-gauche.png';
 
 function Home() {
 
+  
+
   console.log("Salut, le site est pas fini, je le continuerais plus tard, je l'ai fais en une nuit, et comme j'ai pas beaucoup de temps en ce moment, je vais mettre un peu de temps... ")
   return (
-    <div className='w-auto h-screen flex flex-col justify-between' id='lefond'>
-      <header className='flex justify-between px-10 pt-5'>
-        <img src={pfp} alt='Profile' className='w-24 h-24 rounded-full border-4 border-solid border-white hover:border-blue-400' />
-        <div className='flex flex-row justify-around items-center space-x-9'>
-          <a className='text-black font-bold text-4xl'>14:23</a>
-          <img src={wifi} alt='Wifi' className='w-16 h-16' />
-          <img src={batterie} alt='Batterie' className='w-16 h-16' />
+    <div className='w-screen min-h-screen sm:max-h-full sm:min-h-screen md:max-h-full md:min-h-screen lg:max-h-full lg:min-h-screen lg:w-screen flex flex-col justify-between' id='lefond'>
+      <header className='flex justify-between px-4 pt-5 md:px-10 mt-5 lg:mt-0'>
+        <img src={pfp} alt='Profile' className='w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-solid border-white hover:border-blue-400' />
+        <div className='flex flex-row justify-around items-center space-x-4 md:space-x-9'>
+          <p className='text-black font-bold text-2xl md:text-4xl'>14:23</p>
+          <img src={wifi} alt='Wifi' className='w-8 h-8 md:w-16 md:h-16' />
+          <img src={batterie} alt='Batterie' className='w-8 h-8 md:w-16 md:h-16' />
         </div>
       </header>
 
-      <div className='h-1/2 '>
-        <div className='flex items-end sm:h-24 md:h-32 lg:h-40'>
-          <p className='text-lg ml-4 sm:text-lg sm:ml md:text-lg md:ml-5 lg:text-2xl lg:text-bold lg:ml-10'>Somes of my projects :</p>
+      <div className='flex-grow'>
+        <div className='flex items-end h-16 md:h-24 lg:h-32 mt-16 lg:mt-0 '>
+          <p className='text-xl ml-2 md:text-2xl md:ml-5 lg:text-2xl lg:ml-10'>Somes of my projects :</p>
         </div>
+{/* ------------------------------------------------------------------------------------------------------------------------- */ }
 
-        <div className='flex flex-row items-center h-3/4 justify-center space-x-5 ml'>
+        <div className='flex flex-wrap items-center justify-center mt-28 md:mt-24 lg:mt-8'>
           {/*Projet 1*/}
           <Link to='https://github.com/gateaulune/smash-in-paris'>
-            <div className='h-72 w-72 border-black hover:border-blue-400' id='box'>
-
+            <div className='h-36 w-36 md:h-48 md:w-48 lg:h-72 lg:w-72 lg:mr-4 md:mr-5 sm:mr-2 mr-2 border-black hover:border-blue-400 lg:block md:block ' id='box'>
             </div>
           </Link>
-          <div className='h-72 w-72 border-black hover:border-blue-400' id='box'>
 
+          <div className='h-36 w-36 md:h-48 md:w-48 lg:h-72 lg:w-72 lg:mr-4 md:mr-5 sm:mr-2 mr-2 border-black hover:border-blue-400 hidden md:block' id='box'>
           </div>
-          <div className='h-72 w-72 border-black hover:border-blue-400' id='box'>
 
+          <div className='h-36 w-36 md:h-48 md:w-48 lg:h-72 lg:w-72 lg:mr-4 md:mr-5 sm:mr-2 mr-2 border-black hover:border-blue-400 hidden md:block' id='box'>
           </div>
-          <div className='h-72 w-72 border-black hover:border-blue-400' id='box'>
 
+          <div className='h-36 w-36 md:h-48 md:w-48 lg:h-72 lg:w-72 lg:mr-4 md:mr-5 sm:mr-2 mr-2 border-black hover:border-blue-400  hidden lg:block  md:hidden ' id='box'>
           </div>
-          <div className='h-72 w-72 border-black hover:border-blue-400' id='box'>
 
+          <div className='h-36 w-36 md:h-48 md:w-48 lg:h-72 lg:w-72 lg:mr-4 md:mr-5 sm:mr-2 mr-2 border-black hover:border-blue-400 hidden lg:block md:hidden ' id='box'>
           </div>
-          <div className='h-60 w-60  border-black rounded-full' id='ball'>
-            <div className='flex h-auto w-auto flex-col' id='space-box'>
+
+          {/* Start Of Circle */}
+          <div className='h-30 w-30 md:h-40 md:w-40 lg:h-60 lg:w-60 border-black rounded-full' id='ball'>
+            <div className='flex flex-col' id='space-box'>
               <div className='flex flex-row'>
-                <div className='h-12 w-12 border-black' id='box-in'></div>
-                <div className='h-12 w-12 ml-2 border-black' id='box-in'></div>
+                <div className='h-6 w-6 md:h-8 md:w-8 lg:h-12 lg:w-12 border-black' id='box-in'></div>
+                <div className='h-6 w-6 ml-1 md:h-8 md:w-8 md:ml-2 lg:h-12 lg:w-12 lg:ml-2 border-black' id='box-in'></div>
               </div>
-              <div className='flex flex-row mt-2'>
-                <div className='h-12 w-12 border-black' id='box-in'></div>
-                <div className='h-12 w-12 border-black ml-2' id='box-in'></div>
+              <div className='flex flex-row mt-1 md:mt-2'>
+                <div className='h-6 w-6 md:h-8 md:w-8 lg:h-12 lg:w-12 border-black' id='box-in'></div>
+                <div className='h-6 w-6 ml-1 md:h-8 md:w-8 md:ml-2 lg:h-12 lg:w-12 lg:ml-2 border-black' id='box-in'></div>
               </div>
             </div>
           </div>
-          {/*Projet 2*/}
-          {/*Projet 3*/}
-          {/*Plus link to git*/}
+          {/* End Of Circle */}
         </div>
       </div>
-      {/*En gros; ici c'est le truc avec les reseaux sociaux, gl meuf, c'est chiant*/}
-      <div className='mt-24'>
-        <div className='flex flex-row justify-center space-x-8'>
-          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400'id='test'>
-            <img src={git} alt='Github' className='w-20 h-20  filter invert ' />
-          </div>
-          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400'id='test'>
-            <img src={twitter} alt='Twitter' className='w-20 h-20 filter invert' />
-          </div>
-          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400' id='test'>
-            <img src={discord} alt='Discord' className='w-20 h-20 filter invert' />
+
+{/* ------------------------------------------------------------------------------------------------------------------------- */ }
+
+      <div className='mt-10 md:mt-14'>
+        <div className='flex flex-wrap justify-center space-x-3 lg:space-x-4 md:space-x-8  '>
+          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 ' id='test'>
+            <img src={git} alt='Github' className='w-10 h-10  md:w-20 md:h-20 filter invert' />
           </div>
           <div className='rounded-full border-4 border-solid border-white hover:border-blue-400' id='test'>
-            <img src={youtube} alt='Youtube' className='w-20 h-20 filter invert' />
+            <img src={twitter} alt='Twitter' className='w-10 h-10 md:w-20 md:h-20 filter invert' />
           </div>
-          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400' >
-            <img src={parametres} alt='Parametres' className='w-20 h-20 filter invert' />
+          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 bg-white' id='test'>
+            <img src={discord} alt='Discord' className='w-10 h-10 md:w-20 md:h-20 filter invert' />
           </div>
-          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400'> 
-            <img src={power} alt='Power' className='w-20 h-20 filter invert' />
+          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 bg-white' id='test'>
+            <img src={youtube} alt='Youtube' className='w-10 h-10 md:w-20 md:h-20 filter invert    border-black rounded-full' />
+          </div>
+
+          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 bg-white'>
+            <img src={parametres} alt='Parametres' className='w-10 h-10 md:w-20 md:h-20 filter invert' id='button'/>
+          </div>
+          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 bg-white'>
+            <img src={power} alt='Power' className='w-10 h-10 md:w-20 md:h-20  ' id='button'/>
           </div>
         </div>
       </div>
-      <div className='mt-24 w-full flex justify-center'>
+
+      <div className='mt-10 md:mt-14 w-full flex justify-center'>
         <hr className='w-11/12 border-t-2 border-black' />
       </div>
-      <footer className='flex flex-row items-center justify-around h-full'>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className='flex flex-row items-center'>
-          <img src={mouse} alt='Mouse' className='w-12 h-12' />
-          <p className='text-2xl'>OK</p>
-        </div>
+
+      <footer className='flex flex-row h-24 md:h-32 items-center justify-center md:justify-end md:mr-14 lg:justify-end lg:mr-32'>
+        <img src={mouse} alt='Mouse' className='w-8 h-8 md:w-12 md:h-12' />
+        <p className='text-lg md:text-2xl'>OK</p>
       </footer>
     </div>
   );
