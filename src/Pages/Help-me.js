@@ -19,7 +19,7 @@ function Help(){
             <p>Mais ne perdez pas espoir, sortez avec vos amis, trouvez une passion.</p>
             <p>Ne restez pas seul à rien faire, c'est la pire des torture...</p>
             <p>Pour ma part, l'informatique m'a sauvé la vie. Merci beaucoup Anthony pour ce cadeau.</p>
-            <p>Merci Ines, Jules Reika d'être dans ma vie.</p>
+            <p>Merci Ines, Jules, Reika d'être dans ma vie.</p>
             <p>Merci Mamie, Raph', Aydan d'avoir été dans ma vie. Reposez-en paix.</p>
             <p>Merci beaucoup, prenez-soin de vous.</p>
             <p>- Charlotte "Shyybi".</p>
