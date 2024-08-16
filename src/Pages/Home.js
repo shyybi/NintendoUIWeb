@@ -1,5 +1,6 @@
 // Home.js
 import React from 'react';
+import{ Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import pfp from '../assets/pfphxh.jpg';
 import wifi from '../assets/wifi.png';
@@ -19,6 +20,9 @@ function Home() {
   console.log("Salut, le site est pas fini, je le continuerais plus tard, je l'ai fais en une nuit, et comme j'ai pas beaucoup de temps en ce moment, je vais mettre un peu de temps... ")
   return (
     <div className='w-screen min-h-screen sm:max-h-full sm:min-h-screen md:max-h-full md:min-h-screen lg:max-h-full lg:min-h-screen lg:w-screen flex flex-col justify-between' id='lefond'>
+      <Helmet>
+        <title>Menu Home | Shyybi.me</title>
+      </Helmet>
       <header className='flex justify-between px-4 pt-5 md:px-10 mt-5 lg:mt-0'>
         <img src={pfp} alt='Profile' className='w-16 h-16 md:w-24 md:h-24 rounded-full border-4 border-solid border-white hover:border-blue-400' />
         <div className='flex flex-row justify-around items-center space-x-4 md:space-x-9'>
@@ -74,18 +78,24 @@ function Home() {
 
       <div className='mt-10 md:mt-14'>
         <div className='flex flex-wrap justify-center space-x-3 lg:space-x-4 md:space-x-8  '>
-          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 ' id='test'>
-            <img src={git} alt='Github' className='w-10 h-10  md:w-20 md:h-20 filter invert' />
-          </div>
-          <div className='rounded-full border-4 border-solid border-white hover:border-blue-400' id='test'>
-            <img src={twitter} alt='Twitter' className='w-10 h-10 md:w-20 md:h-20 filter invert' />
-          </div>
+          <Link to="https://github.com/gateaulune">
+            <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 ' id='test'>
+              <img src={git} alt='Github' className='w-10 h-10  md:w-20 md:h-20 filter invert' />
+            </div>
+          </Link>
+          <Link to="https://x.com/0xShyybi">
+            <div className='rounded-full border-4 border-solid border-white hover:border-blue-400' id='test'>
+              <img src={twitter} alt='Twitter' className='w-10 h-10 md:w-20 md:h-20 filter invert' />
+            </div>
+          </Link>
           <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 bg-white' id='test'>
             <img src={discord} alt='Discord' className='w-10 h-10 md:w-20 md:h-20 filter invert' />
           </div>
+          <Link to="https://www.youtube.com/@LeGateauDeLaLune">
           <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 bg-white' id='test'>
             <img src={youtube} alt='Youtube' className='w-10 h-10 md:w-20 md:h-20 filter invert    border-black rounded-full' />
           </div>
+          </Link>
 
           <div className='rounded-full border-4 border-solid border-white hover:border-blue-400 bg-white'>
             <img src={parametres} alt='Parametres' className='w-10 h-10 md:w-20 md:h-20 filter invert' id='button'/>
